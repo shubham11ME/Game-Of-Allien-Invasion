@@ -1,11 +1,13 @@
 # upload the ship image
 import pygame
+from pygame.sprite import Sprite
 
-class Ship:
+class Ship(Sprite):
     """A class to manage the ship"""
 
     def __init__(self, ai_game): # ai_game is the current instance of AlienInvasion class. This give access to the Ship to all the game resources used in alien invasion class.
         """Initialize the ship and starting position"""
+        super().__init__()
         self.screen = ai_game.screen
         # create a setting attribute, so we can use it in update()
         self.settings = ai_game.settings
@@ -38,3 +40,8 @@ class Ship:
     def blitme(self):
         """Draw the ship at its current location"""
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        """Center the ship on the screen."""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
