@@ -1,6 +1,5 @@
 # Game-Of-Allien-Invasion
 This game shoots the aliens coming from the space.
-The game of alien invasion is currently in developing phase and I've created half of game and upload the game code.
 
 **All about this game:**
 
@@ -13,3 +12,5 @@ destroys the aliens. If the player shoots all the aliens, a new fleet
 appears that moves faster than the previous fleet. If any alien hits
 the player’s ship or reaches the bottom of the screen, the player
 loses a ship. If the player loses three ships, the game ends.
+
+Enjoy the game.
